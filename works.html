@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WORKS - SanneToga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- ウィンドウタイトルバー -->
+        <div class="title-bar">
+            <span>WORKS - SanneToga - Microsoft Internet Explorer</span>
+            <div class="title-controls">
+                <span class="ctrl-btn">_</span>
+                <span class="ctrl-btn">□</span>
+                <span class="ctrl-btn close">×</span>
+            </div>
+        </div>
+
+        <!-- 1. タイトル（サイト名） -->
+        <h1>SanneToga</h1>
+
+        <!-- 2. バナーエリア -->
+        <div class="banner-area">
+            <!-- ↓ここにバナーを追加 -->
+            <a href='https://blinkies.cafe' target='_blank'><img
+                    src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif'
+                    alt='blinkies.cafe | make your own blinkies!'></a>
+            <img src="assets/blinkiesCafe-YF.gif" alt="blinkie">
+        </div>
+
+        <!-- 3. ナビゲーション -->
+        <div class="nav-tabs">
+            <a href="index.html" class="tab">HOME</a>
+            <a href="works.html" class="tab active">WORKS</a>
+            <a href="blog.html" class="tab">BLOG</a>
+        </div>
+
+        <hr>
+
+        <!-- 4. メインコンテンツ -->
+        <div class="main-content">
+            <h2>FEATURED WORKS</h2>
+            <div class="work-panels">
+
+                <!-- === パネル追加時の目印 ===
+                     新しい実績を追加する時は、この <div class="work-panel">...</div> をコピーして増やしてください。
+                -->
+                <div class="work-panel">
+                    <a href="https://www.youtube.com/watch?v=slN-nELQk98" target="_blank">
+                        <!-- ここにサムネイル画像を入れてください -->
+                        <img src="assets/thumb_panipani.jpg" alt="ぱにぱにとにっく"
+                            style="width: 100%; height: 180px; object-fit: cover; background: #002244;">
+                    </a>
+                    <h3>ぱにぱにとにっく</h3>
+                    <div style="text-align: left; padding: 0 5px; line-height: 1.4;">
+                        <span style="font-weight: bold; font-size: 14px;">黒髪あん</span>
+                        <span
+                            style="float: right; color: #0055ea; font-size: 12px; border-bottom: 1px dashed #0055ea;">#MV</span>
+                        <div style="font-size: 11px; color: #555; margin-top: 5px;">MVを担当しました。</div>
+                    </div>
+                </div>
+
+                <div class="work-panel">
+                    <a href="https://x.com/toga3_work/status/2037917435937141001" target="_blank"
+                        style="display: flex; gap: 6px; overflow: hidden; border-radius: 4px;">
+                        <img src="assets/thumb_vovauni.jpg" alt="VOCALOID:UNION Future 1"
+                            style="flex: 1; min-width: 0; height: 180px; object-fit: cover; background: #002244;">
+                        <img src="assets/thumb_vovauni2.jpg" alt="VOCALOID:UNION Future 2"
+                            style="flex: 1; min-width: 0; height: 180px; object-fit: cover; background: #002244;">
+                    </a>
+                    <h3 style="margin: 12px 0 6px 0;">『VOCALOID:UNION Future』</h3>
+                    <div style="text-align: left; padding: 0 5px; line-height: 1.4;">
+                        <span style="font-weight: bold; font-size: 14px;">CrossNotes</span>
+                        <span
+                            style="float: right; color: #0055ea; font-size: 12px; border-bottom: 1px dashed #0055ea;">#VJ</span>
+                        <div style="font-size: 12px; color: #555; margin-top: 5px;">VJを担当しました。</div>
+                    </div>
+                </div>
+
+                <div class="work-panel">
+                    <a href="#" target="_blank">
+                        <img src="assets/thumb_dummy2.jpg" alt="No Image"
+                            style="width: 100%; height: 180px; object-fit: cover; background: #003366;">
+                    </a>
+                    <h3>作品タイトル（製作中）</h3>
+                    <div style="text-align: left; padding: 0 5px; line-height: 1.4;">
+                        <span style="font-weight: bold; font-size: 14px;">作者名</span>
+                        <span style="float: right; color: #0055ea; font-size: 12px;">#タグ</span>
+                        <div style="font-size: 11px; color: #666; margin-top: 5px;">担当部分などの備考</div>
+                    </div>
+                </div>
+
+                <div class="work-panel">
+                    <a href="#" target="_blank">
+                        <img src="assets/thumb_dummy3.jpg" alt="No Image"
+                            style="width: 100%; height: 180px; object-fit: cover; background: #003366;">
+                    </a>
+                    <h3>作品タイトル（製作中）</h3>
+                    <div style="text-align: left; padding: 0 5px; line-height: 1.4;">
+                        <span style="font-weight: bold; font-size: 14px;">作者名</span>
+                        <span style="float: right; color: #0055ea; font-size: 12px;">#タグ</span>
+                        <div style="font-size: 11px; color: #666; margin-top: 5px;">担当部分などの備考</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <br>
+            <div style="text-align: center;">====================================</div>
+            <br>
+
+            <h2>WORKS ARCHIVE</h2>
+            <table class="work-table">
+                <thead>
+                    <tr>
+                        <th>いつ</th>
+                        <th>なにを</th>
+                        <th>だれの</th>
+                        <th>どんな</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 新しい一覧は <tr> から </tr> までをコピーして上の行に追加してください -->
+                    <tr>
+                        <td>2026/03</td>
+                        <td><a href="https://x.com/toga3_work/status/2037917435937141001"
+                                target="_blank">『VOCALOID:UNION Future』</a></td>
+                        <td>CrossNotes</td>
+                        <td>VJ</td>
+                    </tr>
+                    <tr>
+                        <td>2026/02</td>
+                        <td><a href="https://www.youtube.com/watch?v=slN-nELQk98" target="_blank">ぱにぱにとにっく / 黒髪あん
+                                feat.足立レイ, 汎用式概念χ</a></td>
+                        <td>黒髪あん</td>
+                        <td>MV</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 6. blinkies / 装飾エリア -->
+        <div class="blinkies" style="margin-bottom: 20px;">
+            <!-- ↓ここにblinkieを自由に追加 -->
+        </div>
+
+        <hr>
+
+        <div class="footer">
+            <p>最終更新日：2026/04/02 | ※このサイトは1024x768での閲覧を推奨しています</p>
+
+            <p style="font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 1px;">
+                Copyright &copy; 2026 SanneToga. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
