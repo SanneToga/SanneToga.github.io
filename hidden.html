@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <link rel="stylesheet" href="./css/style.css" id="theme-style">
+    <style>
+        /* 隠しページ専用の特別なスタイル */
+        body {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .hidden-container {
+            text-align: center;
+            border: 1px dashed var(--bg-color);
+            padding: 40px;
+            max-width: 400px;
+        }
+
+        .hidden-container a {
+            color: var(--bg-color);
+            border-bottom: 1px dotted var(--bg-color);
+        }
+
+        .hidden-container a:hover {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hidden-container">
+        <p style="font-family: monospace; letter-spacing: 5px; margin-bottom: 30px;">
+            隠しページへようこそ！
+        </p>
+
+        <p style="font-size: 10px;">
+            <a href="index.html">戻る</a>
+        </p>
+    </div>
+</body>
+
+</html>
