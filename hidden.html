@@ -4,49 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>...</title>
+    <title>... - SanneToga</title>
     <link rel="stylesheet" href="./css/style.css" id="theme-style">
     <style>
-        /* 隠しページ専用の特別なスタイル */
+        /* 隠しページ専用の特別なスタイル：サイト全体を反転させる */
+        :root {
+            --bg-color: #333333;
+            --text-color: #ffffff;
+            --link-color: #ffffff;
+            --border-color: #ffffff;
+        }
+
         body {
-            background-color: var(--text-color);
-            color: var(--bg-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            padding: 20px;
-        }
-
-        .hidden-container {
-            text-align: center;
-            border: 1px dashed var(--bg-color);
-            padding: 40px;
-            max-width: 400px;
-        }
-
-        .hidden-container a {
-            color: var(--bg-color);
-            border-bottom: 1px dotted var(--bg-color);
-        }
-
-        .hidden-container a:hover {
             background-color: var(--bg-color);
             color: var(--text-color);
+        }
+
+        .header,
+        .top-tabs .tab,
+        .menu-box ul li a,
+        .update-box,
+        .content-box,
+        .footer {
+            border-color: var(--border-color) !important;
+        }
+
+        .top-tabs .tab.active {
+            background-color: var(--border-color);
+            color: var(--bg-color);
+        }
+
+        a {
+            color: var(--link-color);
+            border-bottom-color: var(--border-color);
+        }
+
+        a:hover {
+            background-color: var(--border-color);
+            color: var(--bg-color);
         }
     </style>
 </head>
 
 <body>
-    <div class="hidden-container">
-        <p style="font-family: monospace; letter-spacing: 5px; margin-bottom: 30px;">
-            隠しページへようこそ！
-        </p>
+    <div class="container">
+        <header class="header">
+            <h1>⊹₊⋆ 兎賀さんねの隠しページへようこそ！ ✧˖°.</h1>
+            <p>welcome to my site.</p>
+        </header>
 
-        <p style="font-size: 10px;">
-            <a href="index.html">戻る</a>
-        </p>
+        <nav class="top-tabs">
+            <a href="index.html" class="tab">HOME</a>
+            <a href="works.html" class="tab">WORKS</a>
+            <a href="blog.html" class="tab">BLOG</a>
+        </nav>
+
+        <div class="main-wrapper">
+            <nav class="sidebar">
+                <h3>Link</h3>
+                <div class="menu-box">
+                    <ul>
+                        <li><a href="https://www.youtube.com/@%E5%85%8E%E8%B3%80%E3%81%95%E3%82%93%E3%81%DE"
+                                target="_blank" class="link-youtube">YouTube</a></li>
+                        <li><a href="https://x.com/toga3_work" target="_blank" class="link-x">Twitter / X</a></li>
+                        <li><a href="https://scrapbox.io/SanneToga/" target="_blank" class="link-Cosence">Cosence</a>
+                        </li>
+                        <li><a href="https://togasan.booth.pm" target="_blank" class="link-booth">Booth</a></li>
+                        <li><a href="https://studiodotzip.studio.site" target="_blank"
+                                class="link-studio">Studio.zip</a></li>
+                    </ul>
+                </div>
+
+                <div class="update-box">
+                    <h3>Update</h3>
+                    <p class="small-text">ERROR: DATA CORRUPTED</p>
+                </div>
+            </nav>
+
+            <main class="content">
+                <section class="content-box">
+                    <h2>隠しページ：断片的な記録</h2>
+                    <p class="small-text"
+                        style="font-family: monospace; border-bottom: 1px dashed var(--border-color); padding-bottom: 10px;">
+                        202X.XX.XX
+                    </p>
+
+                    <div style="margin-top: 20px;">
+                        <p>ここまで辿り着いてくれてありがとうございます。</p>
+
+                        <p>ここは、表には出さない制作のボツ案や、とりとめもない思考の断片を置いておく場所です。不定期に更新されるかもしれませんし、されないかもしれません。</p>
+
+                        <div class="image-placeholder"
+                            style="background-image: repeating-linear-gradient(45deg, #000, #000 2px, #333 2px, #333 4px); color: #fff; border-color: #fff;">
+                            <p>VOID</p>
+                        </div>
+
+                        <p>インターネットの深淵で、またお会いしましょう。</p>
+                    </div>
+
+                    <div style="margin-top: 40px; text-align: center;">
+                        <a href="index.html">&lt;&lt; 表の世界に戻る</a>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; SanneToga<a href="hidden.html" class="secret-link">.</a></p>
+        </footer>
     </div>
 </body>
 

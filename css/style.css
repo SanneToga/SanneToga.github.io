@@ -1,3 +1,7 @@
+html {
+    scrollbar-gutter: stable;
+}
+
 :root {
     --bg-color: #ffffff;
     --text-color: #333333;
@@ -21,12 +25,11 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px; /* 13px -> 14px */
     line-height: 1.8;
     margin: 0;
     padding: 40px;
-    zoom: 1.1;
-    /* サイト全体を110%に拡大 */
+    /* zoom: 1.1; 互換性のために一旦削除し、フォントサイズとコンテナ幅で対応 */
 }
 
 a {
@@ -41,7 +44,7 @@ a:hover {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 920px; /* 880px -> 920px (約115%) */
     margin: 0 auto;
 }
 
@@ -220,10 +223,26 @@ li a.link-studio:hover {
     display: block;
 }
 
+.work-panel img:hover {
+    opacity: 0.8;
+}
+
+/* 画像リンクの下線とホバー背景を消す */
+.work-panel a {
+    border-bottom: none;
+}
+
+.work-panel a:hover {
+    background-color: transparent;
+}
+
 /* 縦長の画像などを切り取らずに全体を見せたい場合用 */
 .work-panel img.img-contain {
-    object-fit: contain; /* 切り抜かず、全体が枠内に収まるように縮小 */
-    background-color: transparent;
+    object-fit: contain;
+    width: 100%; /* 横幅いっぱいの枠に戻す */
+    background-color: #ffffff; /* 余白を白にする */
+    background-image: none;
+    filter: none;
 }
 
 .work-title {
@@ -305,8 +324,7 @@ li a.link-studio:hover {
 
 .blog-thumb {
     width: 100%;
-    max-width: 400px;
-    height: 80px;
+    height: 120px;
     object-fit: cover;
     border: 1px solid var(--border-color);
     display: block;
@@ -406,10 +424,10 @@ li a.link-studio:hover {
     }
 
     .header h1 {
-        font-size: 4.5vw; /* 画面幅に合わせて自動で縮小・拡大します */
+        font-size: 4.8vw; /* 少し大きくしつつ、折り返しを許可 */
         letter-spacing: 0;
-        white-space: nowrap; /* 強制的に1行にする */
-        overflow-x: auto; /* はみ出た場合はスクロール可能に */
+        white-space: normal; /* 折り返しを許可 */
+        line-height: 1.4;
         padding-bottom: 5px;
     }
     
