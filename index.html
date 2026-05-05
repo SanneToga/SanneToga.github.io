@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SanneToga</title>
     <link rel="stylesheet" href="./css/style.css" id="theme-style">
+
+    <!-- OGP設定 -->
+    <meta property="og:title" content="SanneToga">
+    <meta property="og:description" content="兎賀さんねのポートフォリオサイト">
+    <meta property="og:image" content="https://SanneToga.github.io/img/icon.jpeg">
+    <meta property="og:url" content="https://SanneToga.github.io/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@toga3_work">
 </head>
 
 <body>
@@ -41,19 +50,38 @@
                     <h3>Update</h3>
                     <p class="small-text">2026.04.29 site open.</p>
                 </div>
+
+                <!-- 縦長ウィンドウ風のメインビジュアル -->
+                <div class="visual-frame">
+                    <div class="frame-header">
+                        <span class="frame-title">Picture1</span>
+                        <span class="frame-close">×</span>
+                    </div>
+                    <div class="frame-body">
+                        <img src="./img/top.jpg" alt="Main Visual">
+                    </div>
+                    <div class="frame-caption">⊹₊⋆ kouen ✧˖°.</div>
+                </div>
             </nav>
 
             <main class="content">
                 <section class="content-box">
                     <h2>* About *</h2>
-                    <p>兎賀さんね (とがさんね) です。</p>
-                    <p>インターネットサブカルチャーを軸に、3Dモデルや映像の制作を行っています。</p>
-
-                    <!-- メイン画像（どんな比率の画像を入れても、自動で高さ150pxに綺麗に切り抜かれます） -->
-                    <img src="./img/top.jpg" alt="メイン画像"
-                        style="width: 100%; height: 150px; object-fit: cover; border: 1px solid var(--border-color); box-sizing: border-box; margin: 20px 0; display: block;">
-
-                    <p>テスト</p>
+                    <div class="main-hero">
+                        <div class="hero-profile">
+                            <div class="hero-image">
+                                <img src="./img/icon.jpeg" alt="兎賀さんね アイコン">
+                            </div>
+                            <div class="hero-content">
+                                <p>兎賀さんね (とがさんね) です。</p>
+                                <p>インターネットサブカルチャーを軸に、3Dモデルや映像の制作を行っています。</p>
+                                <div class="hero-skills">
+                                    <span class="skill-tag">3DCG</span>
+                                    <span class="skill-tag">映像</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="content-box">
@@ -67,23 +95,42 @@
                 </section>
 
                 <section class="content-box">
+                    <div class="banner-section">
+                        <div class="banner-info">
+                            <h3>* Banner *</h3>
+                            <img src="./img/banner.jpeg" alt="SanneToga Banner" width="200" height="40">
+                            <div
+                                style="border-top: 1px dashed currentColor; border-bottom: 1px dashed currentColor; padding: 5px 0; margin: 10px 0; font-family: monospace; font-size: 0.9em; word-break: break-all;">
+                                ▼ free to link<br>
+                                &lt;a href="https://SanneToga.github.io"&gt;&lt;img
+                                src="https://sannetoga.github.io/img/banner.jpeg" width="200" height="40"
+                                alt="SanneToga"&gt;&lt;/a&gt;
+                            </div>
 
-                    <h3>* Banner *</h3>
-                    <img src="./img/banner.jpeg" alt="SanneToga Banner" width="200" height="40">
-                    <div
-                        style="border-top: 1px dashed currentColor; border-bottom: 1px dashed currentColor; padding: 5px 0; margin: 10px 0; font-family: monospace; font-size: 0.9em; word-break: break-all;">
-                        ▼ free to link<br>
-                        &lt;a href="https://SanneToga.github.io"&gt;&lt;img
-                        src="https://SanneToga.github.io/img/banner.jpeg" width="200" height="40"
-                        alt="SanneToga"&gt;&lt;/a&gt;
-                    </div>
+                            <h3>Banners (one-way)</h3>
+                            <div class="banners-list"
+                                style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px;">
+                                <a href="https://kkofu.github.io" target="_blank"><img
+                                        src="https://kkofu.github.io/images/banner.jpg" width="200" height="40"
+                                        alt="kkofu"></a>
+                                <a href="https://mikanixonable.github.io/" target="_blank"><img src="https://mikanixonable.github.io/banner.png" width="200" height="40" alt="月面植物園"></a>
+                                <a href="#" target="_blank"><img src="https://placehold.jp/200x40.png?text=Link+Site"
+                                        alt="Sample Banner"></a>
+                                <a href="#" target="_blank"><img src="https://placehold.jp/200x40.png?text=Link+Site"
+                                        alt="Sample Banner"></a>
+                            </div>
+                        </div>
 
-                    <h3>Banners (one-way)</h3>
-                    <div class="banners-list" style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px;">
-                        <a href="#" target="_blank"><img src="https://placehold.jp/200x40.png?text=Link+Site"
-                                alt="Sample Banner"></a>
-                        <a href="#" target="_blank"><img src="https://placehold.jp/200x40.png?text=Link+Site"
-                                alt="Sample Banner"></a>
+                        <!-- 宙に浮くマスコットと散りばめられた装飾 -->
+                        <div class="floating-mascot">
+                            <div class="decor d1">⊹˚₊‧꒰ა</div>
+                            <div class="decor d2">𓆩✧𓆪</div>
+                            <div class="decor d3">໒꒱ ‧₊˚⊹</div>
+                            <img src="./img/tsumu.png" alt="tsumu">
+                            <div class="decor d4">✧˖°.</div>
+                            <div class="decor d5">⋆⁺₊⋆</div>
+                            <div class="decor d6">･ﾟ:*</div>
+                        </div>
                     </div>
                 </section>
             </main>

@@ -25,7 +25,8 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 14px; /* 13px -> 14px */
+    font-size: 14px;
+    /* 13px -> 14px */
     line-height: 1.8;
     margin: 0;
     padding: 40px;
@@ -44,7 +45,8 @@ a:hover {
 }
 
 .container {
-    max-width: 920px; /* 880px -> 920px (約115%) */
+    max-width: 920px;
+    /* 880px -> 920px (約115%) */
     margin: 0 auto;
 }
 
@@ -112,6 +114,119 @@ a:hover {
 .update-box,
 .content-box {
     margin-bottom: 40px;
+}
+
+/* Side-by-side layout (reverted but class kept for structure) */
+.about-layout {
+    display: block;
+    /* Back to vertical flow */
+}
+
+.main-hero {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.hero-profile {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+/* Sidebar Visual Frame (Vertical style) */
+.sidebar .visual-frame {
+    margin-top: 30px;
+    border: 1px solid var(--border-color);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .frame-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 6px;
+    border-bottom: 1px dotted var(--border-color);
+    background-color: #ffffff;
+}
+
+.sidebar .frame-title {
+    color: #666;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-transform: lowercase;
+}
+
+.sidebar .frame-close {
+    font-size: 12px;
+    color: #ccc;
+    line-height: 1;
+    cursor: default;
+}
+
+.sidebar .frame-body {
+    padding: 5px;
+}
+
+.sidebar .frame-body img {
+    width: 100%;
+    height: 240px;
+    /* Vertically long */
+    object-fit: cover;
+    display: block;
+    border: 1px solid #eee;
+}
+
+.sidebar .frame-caption {
+    padding: 3px 5px;
+    font-size: 8px;
+    text-align: center;
+    border-top: 1px dotted var(--border-color);
+    color: #666;
+}
+
+.hero-image {
+    flex: 0 0 80px;
+    /* Slightly smaller icon to balance with cover */
+}
+
+.hero-image img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    display: block;
+    background-color: #fff;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.hero-skills {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border: 1px solid var(--border-color);
+    font-size: 11px;
+    background: #fff;
+    font-weight: bold;
 }
 
 h2,
@@ -215,8 +330,10 @@ li a.link-studio:hover {
 
 .work-panel img {
     width: 100%;
-    height: 180px; /* 高さを統一してグリッド感を揃える */
-    object-fit: cover; /* 通常は枠に合わせて綺麗に切り抜く */
+    height: 180px;
+    /* 高さを統一してグリッド感を揃える */
+    object-fit: cover;
+    /* 通常は枠に合わせて綺麗に切り抜く */
     border: 1px solid var(--border-color);
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -239,8 +356,10 @@ li a.link-studio:hover {
 /* 縦長の画像などを切り取らずに全体を見せたい場合用 */
 .work-panel img.img-contain {
     object-fit: contain;
-    width: 100%; /* 横幅いっぱいの枠に戻す */
-    background-color: #ffffff; /* 余白を白にする */
+    width: 100%;
+    /* 横幅いっぱいの枠に戻す */
+    background-color: #ffffff;
+    /* 余白を白にする */
     background-image: none;
     filter: none;
 }
@@ -396,6 +515,86 @@ li a.link-studio:hover {
     text-decoration: none;
 }
 
+.banner-section {
+    position: relative;
+}
+
+.banner-info {
+    width: 100%;
+}
+
+.floating-mascot {
+    position: absolute;
+    right: 20px;
+    top: -120px;
+    /* Adjusted to a more stable position */
+    width: 200px;
+    text-align: center;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.floating-mascot img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+    animation: floating 3s ease-in-out infinite;
+    margin-top: 15px; /* Adjust to avoid overlapping with top decors */
+}
+
+.decor {
+    position: absolute;
+    font-size: 10px;
+    color: #999;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 11;
+}
+
+.d1 {
+    top: 20%;
+    left: -30px;
+}
+
+.d2 {
+    top: 0%;
+    right: 20px;
+}
+
+.d3 {
+    top: 40%;
+    right: -40px;
+}
+
+.d4 {
+    bottom: 20%;
+    left: -40px;
+}
+
+.d5 {
+    bottom: 15%;
+    right: -10px;
+}
+
+.d6 {
+    bottom: 40%;
+    right: -50px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 
 
 /* スマホ用のレスポンシブ対応*/
@@ -409,8 +608,13 @@ li a.link-studio:hover {
         gap: 20px;
     }
 
+    .content {
+        order: 1;
+    }
+
     .sidebar {
         width: 100%;
+        order: 2;
     }
 
     .menu-box ul {
@@ -424,15 +628,18 @@ li a.link-studio:hover {
     }
 
     .header h1 {
-        font-size: 4.8vw; /* 少し大きくしつつ、折り返しを許可 */
+        font-size: 4.8vw;
+        /* 少し大きくしつつ、折り返しを許可 */
         letter-spacing: 0;
-        white-space: normal; /* 折り返しを許可 */
+        white-space: normal;
+        /* 折り返しを許可 */
         line-height: 1.4;
         padding-bottom: 5px;
     }
-    
+
     .counter img {
-        max-width: 70%; /* スマホではさらに小さく表示 */
+        max-width: 70%;
+        /* スマホではさらに小さく表示 */
     }
 
     /* 変な改行を防ぐ */
@@ -445,7 +652,14 @@ li a.link-studio:hover {
     }
 
     .banners-list {
-        justify-content: center;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .banners-list a img {
+        width: 100%;
+        height: auto;
     }
 
     .top-tabs {
@@ -461,5 +675,81 @@ li a.link-studio:hover {
     /* Works Grid Mobile */
     .works-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero-profile {
+        flex-direction: row; /* 横並びを維持 */
+        gap: 15px;
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .hero-image {
+        flex: 0 0 60px; /* スマホ用にアイコンを少し小さく */
+        text-align: left;
+    }
+
+    .hero-image img {
+        height: 60px;
+        width: 60px;
+        margin: 0;
+    }
+
+    .about-layout {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .visual-frame {
+        flex: 0 0 auto;
+    }
+
+    .hero-sub-image img {
+        height: 120px;
+    }
+
+    .visual-frame {
+        margin-top: 20px;
+    }
+
+    .frame-body {
+        padding: 5px;
+    }
+
+    .mascot-box {
+        margin-top: 20px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .mascot-box img {
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
+    .sidebar .visual-frame {
+        display: block;
+        margin-top: 20px;
+        max-width: 240px; /* Limit size on mobile */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sidebar .frame-body img {
+        height: 120px; /* Much shorter on mobile */
+    }
+
+    .banner-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .floating-mascot {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 40px auto 0;
+        width: 150px;
     }
 }
