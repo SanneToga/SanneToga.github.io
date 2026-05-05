@@ -2,6 +2,12 @@ html {
     scrollbar-gutter: stable;
 }
 
+/* 画像のレスポンシブ対応：コンテナを突き抜けないように設定 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 :root {
     --bg-color: #ffffff;
     --text-color: #333333;
