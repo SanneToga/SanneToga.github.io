@@ -3,13 +3,11 @@
 // ==========================================
 
 // --- UPDATE項目の設定 ---
-// <p class="small-text">日付 内容</p> の形式で追加してください。
 const updateHTML = `
     <p class="small-text">2026.05.14 site open.</p>
 `;
 
 // --- LINK項目の設定 ---
-// <li><a href="..." target="_blank" class="...">名前</a></li> の形式で追加してください。
 const linksHTML = `
     <li><a href="https://www.youtube.com/@%E5%85%8E%E8%B3%80%E3%81%95%E3%82%93%E3%81%AD" target="_blank" class="link-youtube">YouTube</a></li>
     <li><a href="https://x.com/toga3_work" target="_blank" class="link-x">Twitter / X</a></li>
@@ -19,7 +17,7 @@ const linksHTML = `
 `;
 
 // ==========================================
-// 以下のコードは自動更新用です。変更しないでください。
+// 以下のコードは自動更新用。変更しない。
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
     // UPDATEの更新
