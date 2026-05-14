@@ -13,7 +13,7 @@ const updateHTML = `
 const linksHTML = `
     <li><a href="https://www.youtube.com/@%E5%85%8E%E8%B3%80%E3%81%95%E3%82%93%E3%81%AD" target="_blank" class="link-youtube">YouTube</a></li>
     <li><a href="https://x.com/toga3_work" target="_blank" class="link-x">Twitter / X</a></li>
-    <li><a href="https://scrapbox.io/SanneToga/" target="_blank" class="link-Cosence">Cosence</a></li>
+    <li><a href="https://scrapbox.io/SanneToga/" target="_blank" class="link-Cosense">Cosense</a></li>
     <li><a href="https://togasan.booth.pm" target="_blank" class="link-booth">Booth</a></li>
     <li><a href="https://studiodotzip.studio.site" target="_blank" class="link-studio">Studio.zip</a></li>
 `;
