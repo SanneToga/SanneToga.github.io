@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>... - SanneToga</title>
+    <title>SanneToga - 隠しページ</title>
     <link rel="stylesheet" href="./css/style.css" id="theme-style">
     <style>
-        /* 隠しページ専用の特別なスタイル：サイト全体を反転させる */
+        /* 隠しページ専用の特別なスタイル */
         :root {
             --bg-color: #333333;
             --text-color: #ffffff;
@@ -25,29 +25,10 @@
         .menu-box ul li a,
         .update-box,
         .content-box,
-        .visual-frame,
-        .frame-header,
         .footer {
             border-color: var(--border-color) !important;
         }
 
-        .visual-frame,
-        .frame-header {
-            background-color: var(--bg-color) !important;
-        }
-
-        .frame-header {
-            border-bottom: 1px dotted var(--border-color) !important;
-        }
-
-        .frame-title,
-        .frame-caption {
-            color: var(--text-color) !important;
-        }
-
-        .frame-caption {
-            border-top: 1px dotted var(--border-color) !important;
-        }
 
         .top-tabs .tab.active {
             background-color: var(--border-color);
@@ -83,55 +64,31 @@
             <nav class="sidebar">
                 <h3>Link</h3>
                 <div class="menu-box">
-                    <ul>
-                        <li><a href="https://www.youtube.com/@%E5%85%8E%E8%B3%80%E3%81%95%E3%82%93%E3%81%DE"
-                                target="_blank" class="link-youtube">YouTube</a></li>
-                        <li><a href="https://x.com/toga3_work" target="_blank" class="link-x">Twitter / X</a></li>
-                        <li><a href="https://scrapbox.io/SanneToga/" target="_blank" class="link-Cosence">Cosence</a>
-                        </li>
-                        <li><a href="https://togasan.booth.pm" target="_blank" class="link-booth">Booth</a></li>
-                        <li><a href="https://studiodotzip.studio.site" target="_blank"
-                                class="link-studio">Studio.zip</a></li>
-                    </ul>
+                    <ul id="dynamic-links"></ul>
                 </div>
 
                 <div class="update-box">
                     <h3>Update</h3>
-                    <p class="small-text">2026.04.29 site open.</p>
+                    <div id="dynamic-update"></div>
                 </div>
 
-                <!-- 縦長ウィンドウ風のメインビジュアル -->
-                <div class="visual-frame">
-                    <div class="frame-header">
-                        <span class="frame-title">Picture4</span>
-                        <span class="frame-close">×</span>
-                    </div>
-                    <div class="frame-body">
-                        <img src="./img/top.jpg" alt="Main Visual">
-                    </div>
-                    <div class="frame-caption">⊹₊⋆ kouen ✧˖°.</div>
-                </div>
+
             </nav>
 
             <main class="content">
                 <section class="content-box">
-                    <h2>隠しページ：断片的な記録</h2>
+                    <h2>隠しページ</h2>
                     <p class="small-text"
                         style="font-family: monospace; border-bottom: 1px dashed var(--border-color); padding-bottom: 10px;">
-                        202X.XX.XX
+                        2026.05.14
                     </p>
 
                     <div style="margin-top: 20px;">
                         <p>ここは隠しページです！</p>
 
-                        <p>まだなにも書いていませんよ！</p>
+                        <p>まだなにもありませんよ。</p>
 
-                        <div class="image-placeholder"
-                            style="background-image: repeating-linear-gradient(45deg, #000, #000 2px, #333 2px, #333 4px); color: #fff; border-color: #fff;">
-                            <p>???</p>
-                        </div>
-
-                        <p>本当に何もありませんよ！</p>
+                        <img src="./img/top.jpg" alt="photo_top">
                     </div>
 
                     <div style="margin-top: 40px; text-align: center;">
@@ -142,9 +99,10 @@
         </div>
 
         <footer class="footer">
-            <p>&copy; SanneToga<a href="hidden.html" class="secret-link">.</a></p>
+            <p>SanneToga<a href="hidden.html" class="secret-link">.</a></p>
         </footer>
     </div>
+    <script src="./js/update.js"></script>
 </body>
 
 </html>

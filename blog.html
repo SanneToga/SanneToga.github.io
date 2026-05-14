@@ -25,77 +25,27 @@
             <nav class="sidebar">
                 <h3>Link</h3>
                 <div class="menu-box">
-                    <ul>
-                        <li><a href="https://www.youtube.com/@%E5%85%8E%E8%B3%80%E3%81%95%E3%82%93%E3%81%AD"
-                                target="_blank" class="link-youtube">YouTube</a></li>
-                        <li><a href="https://x.com/toga3_work" target="_blank" class="link-x">Twitter / X</a></li>
-                        <li><a href="https://scrapbox.io/SanneToga/" target="_blank" class="link-Cosence">Cosence</a>
-                        </li>
-                        <li><a href="https://togasan.booth.pm" target="_blank" class="link-booth">Booth</a></li>
-                        <li><a href="https://studiodotzip.studio.site" target="_blank"
-                                class="link-studio">Studio.zip</a></li>
-                    </ul>
+                    <ul id="dynamic-links"></ul>
                 </div>
 
                 <div class="update-box">
                     <h3>Update</h3>
-                    <p class="small-text">2026.04.29 site open.</p>
+                    <div id="dynamic-update"></div>
                 </div>
 
-                <!-- 縦長ウィンドウ風のメインビジュアル -->
-                <div class="visual-frame">
-                    <div class="frame-header">
-                        <span class="frame-title">Picture3</span>
-                        <span class="frame-close">×</span>
-                    </div>
-                    <div class="frame-body">
-                        <img src="./img/top.jpg" alt="Main Visual">
-                    </div>
-                    <div class="frame-caption">⊹₊⋆ kouen ✧˖°.</div>
-                </div>
+
             </nav>
 
             <main class="content">
                 <section class="content-box">
-                    <h2>Blog</h2>
-                    <p>日々の記録や制作の裏話などを書いていきます。</p>
+                    <h2>* Blog *</h2>
+                    <p>ブログです。書きます。</p>
 
                     <ul class="blog-list">
                         <li>
                             <span class="blog-date">2026.05.04</span>
                             <div class="blog-item-body">
-                                <a href="./blog/commission.html" class="blog-title">ご依頼について</a>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="blog-date">2026.05.04</span>
-                            <div class="blog-item-body">
-                                <a href="./blog/2026-05-04-1.html" class="blog-title">制作環境のアップデート</a>
-                                <a href="./blog/2026-05-04-1.html"><img src="./img/top.jpg"
-                                        class="blog-thumb" alt="サムネイル"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="blog-date">2026.05.04</span>
-                            <div class="blog-item-body">
-                                <a href="./blog/2026-05-04-2.html" class="blog-title">最近考えていること</a>
-                                <!-- 画像なし -->
-                            </div>
-                        </li>
-                        <li>
-                            <span class="blog-date">2026.05.03</span>
-                            <div class="blog-item-body">
-                                <a href="./blog/2026-05-03.html" class="blog-title">ブログを始めました。</a>
-                                <a href="./blog/2026-05-03.html"><img
-                                        src="https://placehold.jp/400x80.png?text=Blog+Header+Image" class="blog-thumb"
-                                        alt="サムネイル"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="blog-date">2026.04.29</span>
-                            <div class="blog-item-body">
-                                <a href="./blog/2026-04-29.html" class="blog-title">サイトをオープンしました。</a>
-                                <!-- 画像がないパターンの例 -->
+                                <a href="./blog/2026-05-14_commission.html" class="blog-title">ご依頼について</a>
                             </div>
                         </li>
                     </ul>
@@ -104,15 +54,11 @@
         </div>
 
         <footer class="footer">
-            <div class="counter">
-                あなたは
-                <img
-                    src="https://count.getloli.com/@SanneToga.github.io?name=SanneToga.github.io&theme=moebooru&padding=8&offset=0&align=top&scale=1&pixelated=1&darkmode=0">
-                人目の訪問者です。
-            </div>
-            <p>&copy; SanneToga<a href="hidden.html" class="secret-link">.</a></p>
+
+            <p>SanneToga<a href="hidden.html" class="secret-link">.</a></p>
         </footer>
     </div>
+    <script src="./js/update.js"></script>
 </body>
 
 </html>

@@ -34,34 +34,15 @@
             <nav class="sidebar">
                 <h3>Link</h3>
                 <div class="menu-box">
-                    <ul>
-                        <li><a href="https://www.youtube.com/@%E5%85%8E%E8%B3%80%E3%81%95%E3%82%93%E3%81%AD"
-                                target="_blank" class="link-youtube">YouTube</a></li>
-                        <li><a href="https://x.com/toga3_work" target="_blank" class="link-x">Twitter / X</a></li>
-                        <li><a href="https://scrapbox.io/SanneToga/" target="_blank" class="link-Cosence">Cosence</a>
-                        </li>
-                        <li><a href="https://togasan.booth.pm" target="_blank" class="link-booth">Booth</a></li>
-                        <li><a href="https://studiodotzip.studio.site" target="_blank"
-                                class="link-studio">Studio.zip</a></li>
-                    </ul>
+                    <ul id="dynamic-links"></ul>
                 </div>
 
                 <div class="update-box">
                     <h3>Update</h3>
-                    <p class="small-text">2026.04.29 site open.</p>
+                    <div id="dynamic-update"></div>
                 </div>
 
-                <!-- 縦長ウィンドウ風のメインビジュアル -->
-                <div class="visual-frame">
-                    <div class="frame-header">
-                        <span class="frame-title">Picture1</span>
-                        <span class="frame-close">×</span>
-                    </div>
-                    <div class="frame-body">
-                        <img src="./img/top.jpg" alt="Main Visual">
-                    </div>
-                    <div class="frame-caption">⊹₊⋆ kouen ✧˖°.</div>
-                </div>
+
             </nav>
 
             <main class="content">
@@ -88,9 +69,9 @@
                     <h2>* ご依頼について *</h2>
                     <p>ご依頼は<a href="https://x.com/toga3_work" target="_blank">TwitterのDM</a>またはメール
                         (togasan.333@gmail.com) でお受けしております。<br>
-                        お気軽にご連絡くださいませ！</p>
+                        お気軽にご連絡ください。</p>
                     <p>
-                        <a href="blog/commission.html">詳細を見る &gt;&gt;</a>
+                        <a href="blog/2026-05-14_commission.html">詳細を見る &gt;&gt;</a>
                     </p>
                 </section>
 
@@ -110,18 +91,16 @@
                             <h3>Banners (one-way)</h3>
                             <div class="banners-list"
                                 style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px;">
+
+
                                 <a href="https://kkofu.github.io" target="_blank"><img
                                         src="https://kkofu.github.io/images/banner.jpg" width="200" height="40"
                                         alt="kkofu"></a>
-                                <a href="https://mikanixonable.github.io/" target="_blank"><img src="https://mikanixonable.github.io/banner.png" width="200" height="40" alt="月面植物園"></a>
-                                <a href="#" target="_blank"><img src="https://placehold.jp/200x40.png?text=Link+Site"
-                                        alt="Sample Banner"></a>
-                                <a href="#" target="_blank"><img src="https://placehold.jp/200x40.png?text=Link+Site"
-                                        alt="Sample Banner"></a>
+                                <a href="https://mikanixonable.github.io/" target="_blank"><img
+                                        src="https://mikanixonable.github.io/banner.png" width="200" height="40"
+                                        alt="月面植物園"></a>
                             </div>
                         </div>
-
-                        <!-- 宙に浮くマスコットと散りばめられた装飾 -->
                         <div class="floating-mascot">
                             <div class="decor d1">⊹˚₊‧꒰ა</div>
                             <div class="decor d2">𓆩✧𓆪</div>
@@ -140,12 +119,13 @@
             <div class="counter">
                 あなたは
                 <img
-                    src="https://count.getloli.com/@SanneToga.github.io?name=SanneToga.github.io&theme=moebooru&padding=8&offset=0&align=top&scale=1&pixelated=1&darkmode=0">
+                    src="http://moecounter.atserver186.jp/@SanneToga.github.io?name=SanneToga.github.io&theme=moebooru&padding=8&offset=0&align=top&scale=1&pixelated=0&darkmode=0">
                 人目の訪問者です。
             </div>
-            <p>&copy; SanneToga<a href="hidden.html" class="secret-link">.</a></p>
+            <p>SanneToga<a href="hidden.html" class="secret-link">.</a></p>
         </footer>
     </div>
+    <script src="./js/update.js"></script>
 </body>
 
 </html>
