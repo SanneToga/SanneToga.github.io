@@ -19,8 +19,8 @@ img {
     --hover-youtube-text: #ffffff;
     --hover-x-bg: #1DA1F2;
     --hover-x-text: #ffffff;
-    --hover-Cosence-bg: #12c730;
-    --hover-Cosence-text: #ffffff;
+    --hover-Cosense-bg: #12c730;
+    --hover-Cosense-text: #ffffff;
     --hover-booth-bg: #e1306c;
     --hover-booth-text: #ffffff;
     --hover-studio-bg: #4a4a4a;
@@ -228,10 +228,10 @@ li a.link-x:hover {
     border-color: var(--hover-x-bg);
 }
 
-li a.link-Cosence:hover {
-    background-color: var(--hover-Cosence-bg);
-    color: var(--hover-Cosence-text);
-    border-color: var(--hover-Cosence-bg);
+li a.link-Cosense:hover {
+    background-color: var(--hover-Cosense-bg);
+    color: var(--hover-Cosense-text);
+    border-color: var(--hover-Cosense-bg);
 }
 
 li a.link-booth:hover {
