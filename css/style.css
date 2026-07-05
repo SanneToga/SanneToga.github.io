@@ -340,6 +340,9 @@ li a.link-studio:hover {
     font-size: 11px;
     margin: 0;
     line-height: 1.4;
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .work-desc strong {
