@@ -505,12 +505,19 @@ li a.link-studio:hover {
 }
 
 /* リンクバナーの装飾を消す */
-.banners-list a {
+.banner-info a {
     border-bottom: none;
 }
 
-.banners-list a:hover {
+.banner-info a:hover,
+.banner-info a:focus,
+.banner-info a:active {
     background-color: transparent;
+}
+
+.banner-info a img {
+    display: block;
+    border: none;
 }
 
 .footer {
