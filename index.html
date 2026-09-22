@@ -1,130 +1,61 @@
 <!DOCTYPE html>
-<html lang="ja">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SanneToga</title>
-    <link rel="stylesheet" href="./css/style.css" id="theme-style">
-
-    <!-- OGP設定 -->
-    <meta property="og:title" content="SanneToga">
-    <meta property="og:description" content="兎賀さんねのウェブサイト">
-    <meta property="og:image" content="https://SanneToga.github.io/img/icon.webp">
-    <meta property="og:url" content="https://SanneToga.github.io/">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@toga3_work">
+    <style>
+        body {
+            background-color: rgb(238, 238, 238);
+            font-family: "MS PGothic", "ＭＳ Ｐゴシック", "MS Gothic", "ＭＳ ゴシック", Helv, Osaka, sans-serif;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .大見出し {
+            margin-top: 100px;
+            color: rgb(46, 46, 46);
+            text-align: center;
+        }
+        .小見出し {
+            margin-top: 50px;
+            color: rgb(46, 46, 46);
+        }
+        .main {
+            min-width: auto;
+            max-width: 500px;   
+            margin: auto;
+            padding: 15px;
+        }
+        .説明 {
+            text-align: center;
+        }   
+        .counter {
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+    </style>
 </head>
-
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>⊹₊⋆ 兎賀さんねのウェブサイトへようこそ！ ✧˖°.</h1>
-            <p>welcome!</p>
-        </header>
-
-        <nav class="top-tabs">
-            <a href="index.html" class="tab active">HOME</a>
-            <a href="works.html" class="tab">WORKS</a>
-            <a href="blog.html" class="tab">BLOG</a>
-        </nav>
-
-        <div class="main-wrapper">
-            <nav class="sidebar">
-                <h3>Link</h3>
-                <div class="menu-box">
-                    <ul id="dynamic-links"></ul>
-                </div>
-
-                <div class="update-box">
-                    <h3>Update</h3>
-                    <div id="dynamic-update"></div>
-                </div>
-
-
-            </nav>
-
-            <main class="content">
-                <section class="content-box">
-                    <h2>* About *</h2>
-                    <div class="main-hero">
-                        <div class="hero-profile">
-                            <div class="hero-image">
-                                <img src="./img/icon.webp" alt="兎賀さんね アイコン">
-                            </div>
-                            <div class="hero-content">
-                                <p>兎賀さんね (とがさんね) です。</p>
-                                <p>インターネットサブカルチャーを軸に、3Dモデルや映像の制作を行っています。</p>
-                                <div class="hero-skills">
-                                    <span class="skill-tag">3DCG</span>
-                                    <span class="skill-tag">映像</span>
-                                    <span class="skill-tag">VJ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="content-box">
-                    <h2>* ご依頼について *</h2>
-                    <p>ご依頼は<a href="https://x.com/toga3_work" target="_blank">TwitterのDM</a>またはメール
-                        (togasan.333@gmail.com) でお受けしております。<br>
-                        お気軽にご連絡ください。</p>
-                    <p>
-                        <a href="blog/2026-05-14_commission.html">詳細を見る &gt;&gt;</a>
-                    </p>
-                </section>
-
-                <section class="content-box">
-                    <div class="banner-section">
-                        <div class="banner-info">
-                            <h3>* Banner *</h3>
-                            <a href="https://sannetoga.github.io"><img src="https://sannetoga.github.io/img/banner.jpg"
-                                    width="200" height="40" alt="SanneToga"></a>
-                            <div
-                                style="border-top: 1px dashed currentColor; border-bottom: 1px dashed currentColor; padding: 5px 0; margin: 10px 0; font-family: monospace; font-size: 0.9em; word-break: break-all;">
-                                ▼ free to link<br>
-                                &lt;a href="https://sannetoga.github.io"&gt;&lt;img
-                                src="https://sannetoga.github.io/img/banner.jpg" width="200" height="40"
-                                alt="SanneToga"&gt;&lt;/a&gt;
-                            </div>
-
-                            <h3>Banners (one-way)</h3>
-                            <div class="banners-list"
-                                style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px;">
-
-
-                                <a href="https://kkofu.github.io" target="_blank"><img
-                                        src="https://kkofu.github.io/images/banner.jpg" width="200" height="40"
-                                        alt="kkofu"></a>
-                                <a href="https://mikanixonable.github.io/" target="_blank"><img
-                                        src="https://mikanixonable.github.io/banner.png" width="200" height="40"
-                                        alt="月面植物園"></a>
-                            </div>
-                        </div>
-                        <div class="floating-mascot">
-                            <div class="decor d1">⊹˚₊‧꒰ა</div>
-                            <div class="decor d2">𓆩✧𓆪</div>
-                            <div class="decor d3">໒꒱ ‧₊˚⊹</div>
-                            <img src="./img/tsumu.webp" alt="tsumu">
-                            <div class="decor d4">✧˖°.</div>
-                            <div class="decor d5">⋆⁺₊⋆</div>
-                            <div class="decor d6">･ﾟ:*</div>
-                        </div>
-                    </div>
-                </section>
-            </main>
+    <div class="main">
+        <h1 class="大見出し">Under construction...</h1>
+        <img src="./img/road-closed.png" alt="road-closed" width="100%" height="auto">
+        <div class="説明">
+            <p>兎賀さんねのウェブサイトは現在工事中です...</p>
+            <p>SanneToga's website is currently under construction...</p>
         </div>
-
-        <footer class="footer">
-            <div class="counter">
-                <img src="https://count.ho-cho.moe/@SanneToga?digit=7" alt="access counter" />
-            </div>
-            <p>SanneToga<a href="hidden.html" class="secret-link">.</a></p>
-        </footer>
+        <h2 class="小見出し">Contact</h2>
+        <p>Twitter : <a href="https://x.com/toga3_work">@toga3_work</a></p>
+        <p>Mail : togasan.333@gmail.com</p>
+        <div class="counter">
+            <img src="https://count.ho-cho.moe/@SanneToga?digit=7" alt="access counter" width="70%" height="auto" />
+        </div>
     </div>
-    <script src="./js/update.js"></script>
-</body>
 
+
+
+    
+</body>
 </html>
