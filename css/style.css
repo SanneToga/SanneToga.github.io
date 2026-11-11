@@ -30,11 +30,6 @@ main {
     margin-top: 150px;
 }
 
-main h3 {
-    color: blue;
-}
-
-
 nav {
     position: fixed;
     top: 20px;
@@ -51,6 +46,10 @@ footer {
     right: 50px;
     bottom: 30px;
     text-align: right;
+}
+
+.青い文字 {
+    color: blue;
 }
 
 .profile {
@@ -121,6 +120,21 @@ footer {
 
 .badge {
     margin-bottom: 30px;
+}
+
+
+/* 引用 */
+blockquote {
+    border-left: 1px solid #000000;
+    margin: 10px auto;
+    padding: 5px 30px;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #666666;
 }
 
 @media screen and (max-width: 1280px) {
