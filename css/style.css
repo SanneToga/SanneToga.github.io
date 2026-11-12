@@ -48,8 +48,14 @@ footer {
     text-align: right;
 }
 
+/* 文字装飾 */
 .青い文字 {
     color: blue;
+}
+
+.小さい文字 {
+    font-size: 12px;
+    color: #666666;
 }
 
 .profile {
