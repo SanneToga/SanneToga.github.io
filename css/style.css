@@ -58,6 +58,11 @@ footer {
     color: #666666;
 }
 
+.太い文字 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
 .profile {
     text-align: center;
     position: relative;
